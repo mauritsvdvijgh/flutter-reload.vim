@@ -2,7 +2,7 @@
 " File:        reload.vim
 " Description: reload flutter when saving a dart file
 " Author:      Hank Chiu  <hankchiu.tw@gmail.com>
-" Version:     0.1.0
+" Version:     0.1.1
 " License:     This program is free software. It comes without any warranty,
 "              to the extent permitted by applicable law. You can redistribute
 "              it and/or modify it under the terms of the Do What The Fuck You
@@ -11,5 +11,5 @@
 "
 " ============================================================================
 function! reload#TriggerHotReload() abort
-	silent execute '!kill -SIGUSR1 "$(pgrep -f flutter_tool)" &> /dev/null'
+	silent execute '!kill -SIGUSR1 "$(pgrep -f flutter_tools.snapshot)" &> /dev/null'
 endfunction

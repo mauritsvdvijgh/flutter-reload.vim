@@ -1,3 +1,8 @@
+# Why this fork
+It addresses an issue I had running it on macos. A hotfix is applied which I do not know if it applies to other operating systems etc.
+https://github.com/hankchiutw/flutter-reload.vim/issues/1
+
+
 # flutter-reload.vim
 
 Reload flutter when saving a dart file without using `--pid-file` option.
