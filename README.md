@@ -1,7 +1,8 @@
 # Why this fork
 It addresses an issue I had running it on macos. A hotfix is applied which I do not know if it applies to other operating systems etc.
-https://github.com/hankchiutw/flutter-reload.vim/issues/1
+https://github.com/mauritsvdvijgh/flutter-reload.vim/issues/1
 
+Forked from: https://github.com/hankchiutw/flutter-reload.vim
 
 # flutter-reload.vim
 
@@ -13,19 +14,19 @@ Reload flutter when saving a dart file without using `--pid-file` option.
 
 #### [Vim-Plug](https://github.com/junegunn/vim-plug)
 
-1. Add `Plug 'hankchiutw/flutter-reload.vim'` to your vimrc file.
+1. Add `Plug 'mauritsvdvijgh/flutter-reload.vim'` to your vimrc file.
 2. Reload your vimrc or restart
 3. Run `:PlugInstall`
 
 #### [Vundle](https://github.com/VundleVim/Vundle.vim) or similar
 
-1. Add `Plugin 'hankchiutw/flutter-reload.vim'` to your vimrc file.
+1. Add `Plugin 'mauritsvdvijgh/flutter-reload.vim'` to your vimrc file.
 2. Reload your vimrc or restart
 3. Run `:BundleInstall`
 
 #### [NeoBundle](https://github.com/Shougo/neobundle.vim)
 
-1. Add `NeoBundle 'hankchiutw/flutter-reload.vim'` to your vimrc file.
+1. Add `NeoBundle 'mauritsvdvijgh/flutter-reload.vim'` to your vimrc file.
 2. Reload your vimrc or restart
 3. Run `:NeoUpdate`
 
@@ -33,7 +34,7 @@ Reload flutter when saving a dart file without using `--pid-file` option.
 
 ```sh
 cd ~/.vim/bundle
-git clone https://github.com/hankchiutw/flutter-reload.vim.git
+git clone https://github.com/mauritsvdvijgh/flutter-reload.vim.git
 ```
 
 ### Manual Installation
@@ -44,9 +45,9 @@ git clone https://github.com/hankchiutw/flutter-reload.vim.git
 
 ```sh
 curl -fLo ~/.vim/plugin/reload.vim --create-dirs \
-  https://raw.githubusercontent.com/hankchiutw/flutter-reload.vim/master/plugin/reload.vim
+  https://raw.githubusercontent.com/mauritsvdvijgh/flutter-reload.vim/master/plugin/reload.vim
 curl -fLo ~/.vim/ftplugin/dart.vim --create-dirs \
-  https://raw.githubusercontent.com/hankchiutw/flutter-reload.vim/master/ftplugin/dart.vim
+  https://raw.githubusercontent.com/mauritsvdvijgh/flutter-reload.vim/master/ftplugin/dart.vim
 ```
 
 #### Windows (PowerShell)
@@ -54,8 +55,8 @@ curl -fLo ~/.vim/ftplugin/dart.vim --create-dirs \
 ```powershell
 md ~\vimfiles\plugin
 md ~\vimfiles\doc
-$pluguri = 'https://raw.githubusercontent.com/hankchiutw/flutter-reload.vim/master/plugin/reload.vim'
-$ftpluguri = 'https://raw.githubusercontent.com/hankchiutw/flutter-reload.vim/master/ftplugin/dart.vim'
+$pluguri = 'https://raw.githubusercontent.com/mauritsvdvijgh/flutter-reload.vim/master/plugin/reload.vim'
+$ftpluguri = 'https://raw.githubusercontent.com/mauritsvdvijgh/flutter-reload.vim/master/ftplugin/dart.vim'
 (New-Object Net.WebClient).DownloadFile($pluguri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\vimfiles\plugin\reload.vim"))
 (New-Object Net.WebClient).DownloadFile($ftpluguri, $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath("~\vimfiles\ftplugin\dart.vim"))
 ```
